@@ -1,0 +1,3 @@
+verificar qual é o calcula que uma pessoa paga de INSS
+- como é a regra?
+- uma rede neural é capaz de deduzir essa regra com um só neurônio?

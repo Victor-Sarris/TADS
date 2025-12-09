@@ -1,0 +1,43 @@
+void exibir(arv * a){
+    if(a! = null){
+        printf("<%c", a->conteudo);
+        exibir(a->sae);
+        exibir(a->sad);
+        printf(">");
+    } else{
+        printf("<>");
+    }
+}
+
+main(){
+    No * arvore = criar('a', criar('b', null, criar('d', null, null)), criar('c', criar('e', null, null), criar('f', null, null)));
+
+    exibir();
+}
+
+A sainda desse algoritmo seria:
+
+exibir(500) = <a + exibir(300) + exibir(400) + >
+
+exibir(300) = <b + exibir(null) + exibir(100) + >
+ =<b<>+exibir(100)+>
+
+exibir(100) = <d + exibir(null) + exibir(null) + >
+ =<d<><>>
+
+exibir(400) = <c + exibir(600) + exibir(200) +>
+exibir(600) = <e + exibir(null) + exibir(null) +>
+ = <e<><>>
+exibir(200) = <f +exibir(null) + exibir(null) +>
+ = <f<><>>
+
+
+// imagem 1 e 2.jpg
+// no caso, aqui seria basicamente como uma equação matemática. Só pegar a manha e substituir o valor para encontrar a o caminho da arvore, depois substituir os valores de baixo para cima. Assim 👇 (3.jpg)
+
+exibir(400) = <c<e<><>><f<><>>>
+exibir(300) = <b<><d<><>>>
+exibir(500) = <a<b<><d<><>>><C<e<><>>><f<><>>>>
+
+
+// O conteudo é fácil, só um pouco confuso.

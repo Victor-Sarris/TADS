@@ -1,0 +1,29 @@
+Nessa aula iremos fazer um algoritmo para calcular a altura de uma árvore
+
+- É importante ressaltar que a altura de uma arvore se assemlha a quantidade de elementos de um array no que se refere sua contagem (indice), onde o primeiro nó (tem como indice: 0)
+
+- Se a arvore não existe, ou seja, uma arvore vazia, ela vai ter a altura de -1
+
+int altura(Arv *a){
+    if(a == NULL){
+        return -1;
+    } else{
+        int esq = altura(a->sae);
+        int dir = altura(a->sad);
+        return (esq > dir ? esq:dir) + 1;
+    }
+}
+
+esq = essa variavel vai receber o calculo a altura da sub-arvore da esquerda
+dir = essa variavel vai receber o calculo a altura da sub-arvore da direita
+return (esq > dir ? esq:dir); = se o valor de esquerda for maior que direita, o programa retorna esquerda. Se o valor da direira for maior que a esquerda, o programa retorna direita. Seria a mesma coisa de fazer isso 👇
+
+if(esq > dir){
+    return esq + 1;
+} else{
+    return dir + 1;
+}
+
+E se eu quisesse fazer esse calculo atraves das arestas da arvore? 
+
+No caso, a unica coisa que eu precisaria fazer era trocar o "return -1" por "return 0". Assim seria calculado a altura, ao invés de usar nós, seria usado as arestas para fazer esse calculo

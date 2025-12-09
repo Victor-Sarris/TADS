@@ -1,0 +1,4 @@
+pra calcular a altura de a precisamos saber a altura de b e a altura de c.
+
+basicamente, na imagem calculo.jpg, para calcular o tamanho do nó a, temos que calcular o tamano de nó b e c. Assim respectivamente usando o codigo teste.c
+

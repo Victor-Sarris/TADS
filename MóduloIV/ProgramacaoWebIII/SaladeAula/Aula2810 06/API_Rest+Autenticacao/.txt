@@ -1,0 +1,3 @@
+Esse projeto é um fork feito do projeto da Aula 6 do professor.
+
+Link do Repositório original: https://github.com/profRonaldoIFPI/Programacao_para_internet_II_2025

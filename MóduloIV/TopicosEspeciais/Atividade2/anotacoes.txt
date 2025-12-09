@@ -1,0 +1,1 @@
+recomendo usar o google colab e fazer a importação do dataset por lá

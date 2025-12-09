@@ -1,0 +1,33 @@
+-Árvore:
+-->Teoria dos Grafos;
+-->Toda Árvore é um grafo, mas nem todo grafo é uma árvore;
+-->Estrutura não Linear;
+-->Hierarquia: Exemplo é pastas em gerenciador de arquivos, como disco C sendo o principal;
+-->Recursividade: Todas funcionalides utilizam Recursividade;
+--> Graficamente: Árvore de cabeça para abaixo;
+
+Veja a imagem para entender a nomeclantura:
+1. a -> nó raíz, e todos nós que sai de a, são filhos de a;
+2. Nós filhos a partir de a;
+3. filhos que não tem filhos -> folhas, como f, e geralmente são os últimos filhos;
+4. sub-arvore -> uma parte da arvore;
+
+->>obs: só seguimos nó raiz e filhos, se formos destrinchar de b como exemplo, ele é uma subarvore;
+
+-->Arvore Binária: Quando nó raiz tem somente dois filho;
+->Nó filho na esquerda, é a subfilho da esquerda;
+->Nó filho na direita, é a subfilho da direita;
+->Geralmente da esquerda com a esquerda,  para esquerda para direita;
+
+
+-->Arvore Genérica: Quando nó raiz tem mis de dois filhos;
+
+-->Altura da arvore: A distância da raiz do nó, para sua folha distante;
+->Existe somente um pecurso, se tiver mais de um, não é uma arvore, mas um grafo;
+->Por isso que é aciclico;
+->É dividida em níveis, no qual a primeira começa com 0 no nó raiz;
+
+Grafo-> É usado no gps, por ter mais caminho;
+
+-- implementação --
+-> quando utilizarmos nó para arvore, no mínimo será 3 células dentro dele;

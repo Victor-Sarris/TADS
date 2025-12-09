@@ -1,0 +1,38 @@
+<%- include("partials/head.ejs") %>
+
+
+    <div class="container is-max-widescreen">
+        <table class="table is-striped">
+            <thead>
+                <th>Task</th> <!-- table header  -->
+                <th>Status</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <% tasks.forEach(task=> { %>
+                    <tr> <!-- table row  -->
+                        <td> <!-- table data  -->
+                            <%= task.title %>
+                        </td>
+                        <td>
+                            <%= task.completed?"Completed":"Pending" %>
+                        </td>
+                        <td>
+                            <a class="button is-success <%= task.completed ? 'is-hidden' : '' %>"
+                                href="/tasks/<%= task.id %>">
+                                Finish
+                            </a>
+                            <a class="button is-danger <%= task.completed ? '' : 'is-hidden' %>"
+                                href="/delTasks/<%= task.id %>">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+        <br>
+        <a class="button is-primary mb-6" href="/newTask">Nova tarefa</a>
+    </div>
+
+    <%- include("partials/footer.ejs") %>

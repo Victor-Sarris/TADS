@@ -1,0 +1,37 @@
+Grafo
+
+* teoria dos grafos
+
+* relação entre objetos de conjuntos
+
+    -> vértices
+    -> Arestas
+
+* Exemplo:
+
+(1.jpg)
+
+* seja o grafo G(V,A):
+
+    V ={p | p é uma pessoa}
+    A ={(x,y) | <x é amigo de y>}
+
+    -> exemplo 
+
+    (2.jpg)
+
+    PS: o primeiro grafo é um grafo não direcionado. O segundo é um grafo direcionadoz
+
+    V={ANA, MARIA, JOÃO, PEDRO}
+    A={(ANA,MARIA), (ANA JOÃO), (MARIA, JOÃO), (MARIA, PEDRO)}
+
+    * Representação
+
+    -> Matriz de adjacência (ou vértice)
+
+    Mnxn = [Mij]
+
+    -> Lista de adjacência
+
+    (3.jpg)
+

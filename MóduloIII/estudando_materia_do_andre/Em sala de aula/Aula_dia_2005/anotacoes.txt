@@ -1,0 +1,14 @@
+void exibir(Arv * a){
+    if(a! = null){
+        printf("<%c", a->conteudo);
+        exibir(a->sae);
+        exibir(a->sad);
+        printf(">");
+    } else{
+        printf("<>");
+    }
+}
+
+// exemplo 1.jpg ☝️🪽
+// se voce parar pra perceber, o metodo esta se chamando dentro de sua propria estrutura (recursividade)
+// no caso, acredito que essa estrutura serviria para exibir as filhas da arvore de nó a, como na imagem 2.jpg

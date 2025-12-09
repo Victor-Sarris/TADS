@@ -1,0 +1,94 @@
+<%- include("partials/head.ejs") %>
+  <section class="section has-text-centered">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <form action="/tasks" method="POST" class="box mt-5">
+      <label placeholder="Name of task" for="title" class="title is-3 ">
+        Titulo da tarefa
+      </label>
+      <div class="control has-addons is-centered"></div>
+      <input type="text" name="title" id="title" placeholder="Adicionar tarefa" class="input is-link mt-5" type="text"
+        placeholder="Link input" class="mt-5" class="mb-5" required>
+      <button class="button is-primary mt-6" type="submit">Adicionar Tarefa</button>
+      <a href="/tasks" class="button is-danger mt-6">Voltar para a lista</a>
+    </form>
+    
+  </section>
+
+  <h1 class="title is-3"> Comentários sobre o Site</h1>
+  <article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="../media/mulher.webp" />
+      </p>
+    </figure>
+    <div class="media-content has-text-justified">
+      <div class="content">
+        <p>
+          <strong>Vicotr Sarrís</strong> <small>devvictorsarris@gmail.com</small> <small>31m</small>
+          <br />
+          Antes de conhecer esse site, minha vida era um completo caos. Eu acordava todos os dias sem saber por onde
+          começar, esquecia compromissos importantes, acumulava tarefas e vivia com aquela sensação constante de que
+          estava sempre atrasado. Era como se meu cérebro fosse um navegador com 50 abas abertas — e todas travadas!
+
+          Mas aí eu descobri essa ToDo List. Parece simples: só um espaço pra digitar e organizar as tarefas. Mas pra
+          mim foi como abrir a porta de um novo mundo. Agora eu acordo, coloco tudo que preciso fazer ali, e é como se o
+          peso saísse dos meus ombros.
+
+          Deixei de perder prazos no trabalho, finalmente organizei meus estudos, e até lembrei de pagar as contas em
+          dia (o que, convenhamos, já é quase um milagre). O botão Adicionar Tarefa se tornou o melhor amigo que eu
+          nunca tive.
+
+          Hoje posso dizer sem medo: esse site não só organizou minha rotina, ele salvou a minha sanidade. Não é apenas
+          uma lista de tarefas… é um estilo de vida. Eu não vivo mais sem ele.
+        </p>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-reply"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+          </a>
+          <a class="level-item">
+            <span class="icon is-small"><i class="fas fa-heart"></i></span>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="media-right">
+      <button class="delete"></button>
+    </div>
+  </article>
+
+  <h1 class="title is-5"> Deixe um comentário sobre o site</h1>
+  <article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="../media/homem.jpg" />
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="field">
+        <p class="control">
+          <textarea class="textarea" placeholder="Add a comment..."></textarea>
+        </p>
+      </div>
+      <nav class="level">
+        <div class="level-left">
+          <div class="level-item">
+            <a class="button is-info">Enviar</a>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <label class="checkbox">
+              <input type="checkbox" /> Selecione para enviar
+            </label>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </article>
+
+  <%- include("partials/footer.ejs") %>

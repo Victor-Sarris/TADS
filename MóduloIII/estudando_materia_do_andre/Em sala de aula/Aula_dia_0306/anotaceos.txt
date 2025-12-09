@@ -1,0 +1,1 @@
+o codigo "buscar" vai fazer a verificação, se o campo conteudo do nó 500, no campo conteudo é igual a 'a'. Caso a codição seja verdadeira, ele segue pelo programa.

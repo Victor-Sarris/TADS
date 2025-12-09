@@ -1,0 +1,45 @@
+- teoria dos grafos (pesquisar depois)
+- gráfico desconexo e assíncrono
+
+Aula do dia 07/05/2025 
+
+
+(todo grafo é uma árvore, mas nem toda árvore é um grafo)
+
+- Hierarquia
+
+- Recursividade
+
+As árvores podem ser classificadas de duas formas: Árvore Genérica e Árvore Binária. Sendo Árvore Genérica a estrutura cujo o nó principal 'nó raiz' tenha mais de dois filhos. enquanto Árvores Binárias tem somente dois filhos.
+
+- (Os filhos, podem ser chamados também de sub-árvore)
+
+- Graficamente: Árvore de cabeça pra baixo
+
+Em uma estrutura de árvore, o nó que dá inicío a mesma se chama "nó raiz", enquanto os nós que não possuem filhos se chamam "folhas".
+
+No exemplo da imagem 2, por exemplo, o nó raiz é o 'nó a', sendo folhas os nós que terminam a árvore. Na mesma imagem de exemplo, as denominadas folhas são os nós f, d, e j.
+
+------------------------------------------ Como representar uma árvore em c -----------------------------
+
+usamos o sinal '<' para indicar quando uma árvore é aberta, e '>' para indicar que chegamos ao final da árvore (ou sub-árvore). 
+
+No caso da árvore binária, da imagem 2, ficaria o seguinte:
+
+(imagem 3 do repositório)
+
+(Na imagem 4 o professor deu um exemplo melhor de como seria a saída de uma arvore)
+
+--------------------------------------- Níveis de árvore -------------------------------------------------
+
+Pesquisar sobre altura de árvore
+
+meu resumo:
+
+No caso, resumo de árvore seria em relação a quantas ramificações uma arvore tem. No caso da árvore binária, ela tem 3 níveis. Sendo divididos em:
+
+Nível 0: Nó raiz
+Nível 1: Nó B e C
+Nível 2: Nó D, E e f
+
+(No caso, os níveis começam do nível 0)

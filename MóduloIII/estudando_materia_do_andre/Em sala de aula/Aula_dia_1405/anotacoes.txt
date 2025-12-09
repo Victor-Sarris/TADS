@@ -1,0 +1,51 @@
+// No caso, aqui a gente vai codificar as sub-arvores de uma arvore. No caso da imagem 1, vamos fazer o seguinte:
+
+struct no{
+    char conteudo;
+    struct no * sae; //sae = sub-arvore da esquerda
+    struct no * sad; // sad = sub-arvore da direita
+};
+
+typedef struct no No; // aqui no caso estamos definindo as o tipo das estrutura
+
+// no caso de uma arvore que tem uma sub-arvore, apontamos o nó para "null"
+// para conferir se um nó é uma folha, devemos conferir se esse nó tem sub-arvores, caso não tenha (ou seka, o valor seja null), ela é uma folha
+
+-- observaçoes do professor
+
+// vamos criar um metodo para criar nós nessa arvore
+// vamos fazer o método primeiro para depois fazer o main
+
+No * criar(char *c, No * e, No * d){
+    No * arv = malloc(sizeof(No));                // alocamento de memoria
+    arv->conteudo = c;
+    arv->sae = e;
+    arv->sad = d;
+
+    return arv;
+}
+
+// 2.jpg/3.jpg ☝️🪽
+// algo interessante na criacao de arvores, é que comecamos apenas com as cricaos das folhas, ou seja, obrigatoriamente os campos da esquerda e da direita sao nulos, ou seja, nao precisamos declarar. 
+// para a criacao das folhas, vamos criar uma variavel para cada folha. Exemplo:
+
+main(){
+    No * a1 = criar('d', null, null); // precisa colocar entre aspas simples porque ele é caracter
+    No * a2 = criar('e', null, null);
+    No * a3 = criar('f', null, null);
+    No * a4 = criar('b', null, a1); // no caso, 'a1' porque é ele é um nó do tipo varchar. No caso, precisamos chamar o endereco de memoria dele para poder referencialo
+    No * a5 = criar('c', a2, a3);
+    No * a6 = criar('a', a4, a5);
+}
+
+// imagem 4.jpg ☝️
+// no caso, criar a estrutura de uma arvore assim seria inviavel na criacao de uma arvore gigante ☝️
+// metodos como 'criar' é para coisas mais simples, podemos criar metodos para inserir nós em uma arvore
+// no caso, a 5.pgn representa como seria a nossa arvore criada com a funcao de criacao
+
+// no caso, uma coisa tambem interessante, mas tambem aparentemente muito dificil, é o fato de que podemos criar uma arvore somente com uma variavel. Exemplo abaixo 👇
+
+No * arvore = criar('a', criar('b', null, criar('d', null, null)), criar('c', criar('e', null, null), criar('f', null, null)));
+
+// imagem do quadro: 6.jpg
+// meu amigo, estou com fome, coringando, morrendo de fome, eu vou enlouquecer se uma questão dessa aparecer na prova, puta que pariu mermao

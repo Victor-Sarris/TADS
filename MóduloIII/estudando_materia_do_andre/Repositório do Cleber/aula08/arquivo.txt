@@ -1,0 +1,13 @@
+A partir da primeira foto, responda esta pergunta.
+1°)Como estrututaria o metodo inserir em um arvore?
+2°)Criar um método para saber quais são 'no' folha?
+
+-Primeira foto explica a estrutura gráfica do No em arvores binárias;
+
+A cada nível, aumenta a quantidade de elementos em potência de 2.
+
+-Segunda foto é inserçao de elementos de cima para baixo;
+
+-Terceira e Quarta foto, é a implementação para criar um arvore simples de baixo para cima;
+
+-Quinta foto, é fazendo em uma variavel e de cima para baixo;
