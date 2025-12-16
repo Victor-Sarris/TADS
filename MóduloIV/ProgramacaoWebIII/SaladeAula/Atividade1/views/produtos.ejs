@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Produtos</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        table { width: 50%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Produtos Disponíveis</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% produtos.forEach(function(produto) { %>
+                <tr>
+                    <td><%= produto.nome %></td>
+                    <td><%= produto.preco %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
